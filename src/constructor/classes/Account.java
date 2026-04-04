@@ -48,14 +48,16 @@ public class Account {
 
     }
 
-    public void transferMoney(Account account, int amount){
+    public boolean transferMoney(Account account, int amount){
         if(this.balance<amount){
             System.out.println("Insufficient Amount for transfer");
-            return;
+            return false;
         }
         this.balance-=amount;
         account.balance+=amount;
         System.out.println(amount +" TK tranfer from Acc_No "+accNo+" ( "+ accName+ " ) to "+ account.accNo+ "( "+ account.accName+ " )+ at "+ LocalDateTime.now().toLocalDate());
+
+        return true;
 
 
 
