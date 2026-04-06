@@ -15,4 +15,8 @@ public class DepositAccount extends Account{
     void breakDeposit(){
         System.out.println(" Deposit Amount Break and withDraw ");
     }
+    @Override
+    public void withDrawMoney(int money , int pin){
+        System.out.println("Can not withdraw money from deposit account");
+    }
 }

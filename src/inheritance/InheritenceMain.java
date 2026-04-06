@@ -13,8 +13,8 @@ public class InheritenceMain {
 
         SavingsAccount acc2=new SavingsAccount(102,"SA1","Mudaraba");
 
-
-
+        acc1.withDrawMoney(1000,1234);
+        acc2.withDrawMoney(1000,1234);
 
 
     }
