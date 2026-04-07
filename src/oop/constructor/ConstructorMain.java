@@ -1,8 +1,8 @@
-package constructor;
+package oop.constructor;
 
 
-import constructor.classes.Account;
-import record.TransactionRecord;
+import oop.constructor.classes.Account;
+import oop.record.TransactionRecord;
 
 import java.time.LocalDateTime;
 

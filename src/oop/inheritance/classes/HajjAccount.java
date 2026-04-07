@@ -1,4 +1,4 @@
-package inheritance.classes;
+package oop.inheritance.classes;
 
 public class HajjAccount extends DepositAccount{
    private String type;

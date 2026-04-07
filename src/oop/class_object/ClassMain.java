@@ -1,6 +1,6 @@
-package class_object;
+package oop.class_object;
 
-import class_object.classes.Account;
+import oop.class_object.classes.Account;
 
 public class ClassMain {
     public static void main(String[] args) {

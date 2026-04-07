@@ -1,4 +1,4 @@
-package constructor.classes;
+package oop.class_object.classes;
 
 import java.time.LocalDateTime;
 
@@ -6,19 +6,6 @@ public class Account {
     public int accNo;
     public String accName;
     public int balance;
-
-    public Account(int accNo, String accName, int balance) {
-        this.accNo = accNo;
-        this.accName = accName;
-        this.balance = balance;
-        if(this.balance < 0) this.balance=0;
-    }
-    public Account(int accNo, String accName) {
-        this.accNo = accNo;
-        this.accName = accName;
-        this.balance = 0;
-
-    }
 
     public void deposit(int money){
         if( money <= 0){
@@ -45,21 +32,6 @@ public class Account {
 
     public void getCurrentBalance(){
         System.out.println("Your Current Balance : "+balance+" BDT");
-
-    }
-
-    public boolean transferMoney(Account account, int amount){
-        if(this.balance<amount){
-            System.out.println("Insufficient Amount for transfer");
-            return false;
-        }
-        this.balance-=amount;
-        account.balance+=amount;
-        System.out.println(amount +" TK tranfer from Acc_No "+accNo+" ( "+ accName+ " ) to "+ account.accNo+ "( "+ account.accName+ " )+ at "+ LocalDateTime.now().toLocalDate());
-
-        return true;
-
-
 
     }
 

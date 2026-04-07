@@ -1,4 +1,4 @@
-package inheritance.classes;
+package oop.inheritance.classes;
 
 public class SavingsAccount extends Account{
     private String savingScheme;

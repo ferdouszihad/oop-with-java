@@ -1,4 +1,4 @@
-package inheritance.classes;
+package oop.inheritance.classes;
 
 public class Account {
     private final int accNo;

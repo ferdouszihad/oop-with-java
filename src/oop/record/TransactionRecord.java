@@ -1,4 +1,4 @@
-package record;
+package oop.record;
 
 import java.time.LocalDateTime;
 

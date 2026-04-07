@@ -1,6 +1,6 @@
-package Encapsulation;
+package oop.Encapsulation;
 
-import Encapsulation.classes.Account;
+import oop.Encapsulation.classes.Account;
 
 public class EncapsulationMain {
     public static void main(String[] args) {
