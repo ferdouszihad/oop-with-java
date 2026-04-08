@@ -17,6 +17,8 @@ public class UserHome {
         userDB.addRoleToUser(1,"wife");
         userDB.addRoleToUser(1,"friend");
         userDB.addRoleToUser(1,"love");
+        userDB.addRoleToUser(1,"love");
+        userDB.addRoleToUser(1,"love");
         userDB.addRoleToUser(1,"family");
 
 
@@ -30,11 +32,12 @@ public class UserHome {
 
         userDB.showAllUser();
         userDB.showActiveUser();
+        userDB.countUsersByRoles();
         userDB.countUserWithRole("love");
         userDB.countUserWithRole("friend");
         userDB.countUserWithRole("wife");
 
-        userDB.removeInactiveUser();
+//        userDB.removeInactiveUser();
 
 
 

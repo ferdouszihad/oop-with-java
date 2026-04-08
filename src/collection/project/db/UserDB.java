@@ -2,10 +2,7 @@ package collection.project.db;
 
 import collection.project.entity.User;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class UserDB {
     List<User> userDb= new ArrayList<>();
@@ -40,6 +37,29 @@ public class UserDB {
         System.out.println("id\t\tname\t\t\tisOnline\t\trole");
         for(User user : userDb) if(user.isActive()) user.print();
         System.out.println("----------------------");
+    }
+
+    public void countUsersByRoles()
+    {
+        Map<String,Integer> countRoles=new HashMap<>();
+        for(User user : userDb){
+            for(String role : user.getRoles()){
+                countRoles.put(role, countRoles.getOrDefault(role,0)+1);
+            }
+
+        }
+        showRolesDetail(countRoles);
+
+    }
+    public void showRolesDetail(Map<String,Integer> roles){
+        System.out.println("Showing Roles and Users");
+        System.out.println("roles\t\t\tuserCount");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+//        Iterator<Map<String,Integer>> It= new Map<String,Integer>;
+        for(String key:roles.keySet()){
+            System.out.println(key+"\t\t\t"+roles.get(key));
+        }
+
     }
 
     public void removeInactiveUser(){
